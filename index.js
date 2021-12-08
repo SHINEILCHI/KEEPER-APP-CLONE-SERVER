@@ -12,7 +12,7 @@ app.use(cors({
 
 mongoose.connect(process.env.MONGODB_URI);
 
-app.get("/read", (req, res) => {
+app.get("/", (req, res) => {
     NoteModel.find({}, (err, result) => {
         if (err) {
             res.json(err);
