@@ -7,7 +7,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://keeper-app-clone-mern-stack.netlify.app/"
+    origin: "https://keeper-app-clone-mern-stack.netlify.app"
 }));
 
 mongoose.connect(process.env.MONGODB_URI);
