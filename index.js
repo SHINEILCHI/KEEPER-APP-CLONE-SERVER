@@ -7,7 +7,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:3000"
+    origin: "https://salty-savannah-57698.herokuapp.com/"
 }));
 
 mongoose.connect(process.env.MONGODB_URI);
