@@ -7,7 +7,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors({
-    origin: ["https://keeper-app-clone-mern-stack.herokuapp.com", "http://localhost:5500"]
+    origin: ["https://keeper-app-clone-mern-stack.herokuapp.com", "http://localhost:5000", "http://localhost:5500", "http://localhost:3000"]  // port 5000 is for the server that serves the productionn build (build folder)
 }));
 
 mongoose.connect(process.env.MONGODB_URI);
