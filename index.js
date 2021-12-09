@@ -7,7 +7,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://keeper-app-clone-mern-stack.herokuapp.com"
+    origin: ["https://keeper-app-clone-mern-stack.herokuapp.com", "http://localhost:5500"]
 }));
 
 mongoose.connect(process.env.MONGODB_URI);
